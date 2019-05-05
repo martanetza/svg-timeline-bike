@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background: #c3c782;
+}
+header {
+  width: 35vw;
+  height: 100vh;
+  background: #eef1c0;
+  left: -35vw;
+  position: absolute;
+  -webkit-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.44);
+}
+
+main {
+  height: 100vh;
+  margin-left: 30vw;
+  width: 70%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: #c3c782;
+}
+
+.cls-1 {
+  isolation: isolate;
+}
+
+.cls-2 {
+  fill: #abb76e;
+  /* x: 50.22; */
+}
+
+.cls-3 {
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+}
+
+.cls-4 {
+  fill: #fff;
+}
+
+.cls-5,
+.cls-6 {
+  fill: #a3b9b7;
+}
+
+.cls-11,
+.cls-16,
+.cls-6,
+.cls-9 {
+  font-size: 9px;
+  font-family: Montserrat-Medium, Montserrat Medium;
+  font-weight: 500;
+}
+
+.cls-7 {
+  letter-spacing: -0.04em;
+}
+
+.cls-5,
+.cls-8,
+.cls-10,
+.cls-12 {
+  opacity: 0;
+}
+
+.cls-13 {
+  opacity: 0;
+}
+
+.cls-8,
+.cls-9 {
+  fill: #a3c2b0;
+}
+
+.cls-10,
+.cls-11 {
+  fill: #eef1c0;
+}
+
+.cls-12,
+.cls-16 {
+  fill: #6c8f80;
+}
+
+.cls-13 {
+  fill: #4d4e4e;
+}
+
+.cls-14 {
+  fill: #e4e4e4;
+}
+
+.cls-15,
+.cls-17 {
+  fill: none;
+  opacity: 0;
+}
+.cls-17a {
+  stroke: #6c8f80;
+  stroke-width: 17px;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  fill: none;
+}
+
+.draw {
+  animation: draw 10s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    stroke: #4d4e4e;
+  }
+}
+
+.cls-17 {
+  stroke: #f1f1f1;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+  stroke-dasharray: 11.89 11.89;
+}
