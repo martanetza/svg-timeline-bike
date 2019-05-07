@@ -12,6 +12,7 @@ function loadSVG() {
       // drawLetters();
       animate_1();
       drawPath();
+      calulateSizes();
 
       // console.log(
       //   document
@@ -94,9 +95,62 @@ function animate_1() {
     let element = animateArray[i];
     TweenMax.to(element, 1, { delay: i, opacity: 1 });
     console.log(element);
+
+    animateArray[i].addEventListener("mouseover", () => {
+      console.log("hehe");
+      TweenMax.fromTo(
+        element,
+        1,
+        {
+          transformOrigin: "50% 50%",
+          rotation: 0
+        },
+        {
+          rotation: -360
+        }
+      );
+    });
   }
+
   // TweenMax.to('.box', 3, {opacity: 1, scale: 1, ease: Elastic.easeOut.config(1, 0.3)});
 }
 
 // var array = [{ a: 1 }, { a: 2 }, { a: 3 }, { a: 1 }, { a: 2 }],
 //   amount = array.length;
+
+function calulateSizes() {
+  const svgPlaceholder = document.querySelectorAll(".svgplaceholder");
+  console.log(svgPlaceholder);
+  svgPlaceholder.forEach(repalceSVGwithHTML);
+}
+
+function repalceSVGwithHTML(htmlElement) {
+  //we got an HTMLelement with dta-svgplaceholder
+  //We need to find matching SVG element
+  // console.log(svgPlaceholder);
+  const svgId = htmlElement.dataset.svgplaceholder;
+  const svgSelector = "#" + svgId;
+  console.log(svgId);
+  console.log(htmlElement);
+  const svgElement = document.querySelector(svgSelector);
+
+  fitRetangule(svgElement, htmlElement);
+}
+let headerWidth = document.querySelector("header").offsetWidth;
+console.log(headerWidth);
+
+function fitRetangule(svgElement, htmlElement) {
+  const rect = svgElement.getBoundingClientRect();
+
+  // htmlElement.style.left = svgElement.getAttribute("x") + "px";
+  // htmlElement.style.top = svgElement.getAttribute("y") + "px";
+
+  // htmlElement.style.width = svgElement.getAttribute("width") + "px";
+  // htmlElement.style.height = svgElement.getAttribute("height") + "px";
+
+  htmlElement.style.left = rect.x - headerWidth + 0.14 * headerWidth + "px";
+  htmlElement.style.top = rect.y + "px";
+
+  htmlElement.style.width = rect.width + "px";
+  htmlElement.style.height = rect.height + "px";
+}
