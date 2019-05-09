@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900");
+
 * {
   box-sizing: border-box;
+  font-family: "Lato";
 }
 body {
   margin: 0px;
@@ -17,7 +20,8 @@ header {
   box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.44);
 }
 
-.svgplaceholder {
+.svgplaceholder,
+.svgplaceholder_1 {
   position: absolute;
 }
 
@@ -121,12 +125,17 @@ main {
   fill: none;
   opacity: 0;
 }
+/* .cls-17 {
+  stroke: #6c8f80;
+  stroke-width: 1px;
+} */
 .cls-17a {
   stroke: #6c8f80;
   stroke-width: 17px;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   fill: none;
+  stroke-miterlimit: 10;
 }
 
 .draw {
@@ -158,4 +167,15 @@ h1 {
   font-size: 1.3em;
   text-align: center;
   color: white;
+  cursor: pointer;
+}
+.svgplaceholder_1 h1 {
+  font-size: 1.1em;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.svgplaceholder_1 {
+  opacity: 0;
 }

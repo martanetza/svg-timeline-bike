@@ -13,7 +13,7 @@ function loadSVG() {
       animate_1();
       drawPath();
       calulateSizes();
-
+      calulateSizesPlace();
       // console.log(
       //   document
       //     .querySelector(".cls-3")
@@ -111,8 +111,10 @@ function animate_1() {
   TweenLite.to(".cls-4", { y: "-=0" });
   TweenLite.to(".cls-14", { y: "-=0" });
   let animateArray = document.querySelectorAll(".animCircle");
+  let animatePath = document.querySelectorAll(".animPath");
   let animateArrayGroup = document.querySelectorAll(".animCircleGroup");
   let animatePlaceholder = document.querySelectorAll(".svgplaceholder");
+  let animatePlaceholder_1 = document.querySelectorAll(".svgplaceholder_1");
 
   animatePlaceholder.forEach(myFunct);
   animateArrayGroup.forEach(myFunct);
@@ -123,23 +125,41 @@ function animate_1() {
       let elm = animateArray[i];
       let elmGroup = animateArrayGroup[i];
 
+      let element = animatePath[i];
+      TweenMax.to(element, 1, { opacity: 1 });
+      let element_1 = animatePlaceholder_1[i];
+      TweenMax.to(element_1, 1, { opacity: 1 });
+
       console.log(animateArrayGroup[i].getBoundingClientRect().top);
 
       let differ = animatePlaceholder[i].getBoundingClientRect().top;
       animatePlaceholder[i].addEventListener("click", () => {
-        console.log("click");
-        TweenMax.to(elmGroup, 3, {
-          rotation: -360,
-          // repeat: -1 /* Aka infinite amount of repeats */,
-          stroke: "#6c8f80",
-          strokeWidth: "1px",
-          strokeDasharray: "6",
-          strokeDashoffset: "3",
-          ease: Linear.easeNone,
-          // transform: "translate(100,100)"
-          y: -differ + differ / 2
-          // y: -differ / 2
-        });
+        document.getElementById("ani-circle").beginElement();
+
+        var tl = new TimelineMax({ repeat: 0 });
+
+        var svg = document.querySelector("svg");
+        TweenLite.defaultEase = Sine.easeInOut;
+        TweenLite.defaultOverwrite = false;
+
+        // tl.to(svg, 2, { delay: 1, attr: { viewBox: "450 350 252 178" } })
+        //   .to(svg, 4, { attr: { viewBox: "60 350 252 178" } })
+        //   .to(svg, 2, { attr: { viewBox: "60 210 252 178" } }, "-=0.25")
+        //   .to(svg, 4, { attr: { viewBox: "444 210 252 178" } })
+        // tl.to(svg, 2, { attr: { viewBox: "0 0 757.8 534.8" } });
+
+        // TweenMax.to(elmGroup, 3, {
+        //   rotation: -360,
+        //   // repeat: -1 /* Aka infinite amount of repeats */,
+        //   stroke: "#6c8f80",
+        //   strokeWidth: "1px",
+        //   strokeDasharray: "6",
+        //   strokeDashoffset: "3",
+        //   ease: Linear.easeNone,
+        //   // transform: "translate(100,100)"
+        //   y: -differ + differ / 2
+        //   // y: -differ / 2
+        // });
       });
 
       console.log("hehe");
@@ -169,6 +189,10 @@ function animate_1() {
       );
     });
     elm.addEventListener("mouseout", () => {
+      let element = animatePath[i];
+      TweenMax.to(element, 1, { opacity: 0 });
+      let element_1 = animatePlaceholder_1[i];
+      TweenMax.to(element_1, 1, { opacity: 0 });
       console.log(i);
       let elm = animateArray[i];
 
@@ -197,6 +221,8 @@ function animate_1() {
 
 // var array = [{ a: 1 }, { a: 2 }, { a: 3 }, { a: 1 }, { a: 2 }],
 //   amount = array.length;
+
+// calc sizes - date
 
 function calulateSizes() {
   const svgPlaceholder = document.querySelectorAll(".svgplaceholder");
@@ -247,9 +273,13 @@ function showJSONdata(data) {
   console.log(data);
 
   template = document.querySelector("template");
+  templatePlace = document.querySelector(".tmpl-place");
   data.forEach(element => {
+    console.log(element.place);
     let clone = template.cloneNode(true).content;
+    let clonePlace = templatePlace.cloneNode(true).content;
     clone.querySelector("h1").textContent = element.time;
+    clonePlace.querySelector("h1").textContent = element.country;
     // clone.querySelector("img").src =
     //   "svg_plus_json/" + element.image + ".jpg";
     // clone.querySelector("[data-field='year']").textContent = element.year;
@@ -260,5 +290,37 @@ function showJSONdata(data) {
     document
       .querySelector("[data-svgplaceholder='date_" + element.id + "']")
       .appendChild(clone);
+
+    document
+      .querySelector("[data-svgplaceholder='place_" + element.id + "']")
+      .appendChild(clonePlace);
   });
+}
+
+// calc sizes - place
+
+function calulateSizesPlace() {
+  const svgPlaceholderPlace = document.querySelectorAll(".svgplaceholder_1");
+  console.log(svgPlaceholderPlace);
+  svgPlaceholderPlace.forEach(repalceSVGwithHTMLplace);
+}
+
+function repalceSVGwithHTMLplace(htmlElement) {
+  const svgId = htmlElement.dataset.svgplaceholder;
+  const svgSelector = "#" + svgId;
+
+  const svgElement = document.querySelector(svgSelector);
+  console.log(svgElement);
+
+  fitRetangulePlace(svgElement, htmlElement);
+}
+
+function fitRetangulePlace(svgElement, htmlElement) {
+  const rect = svgElement.getBoundingClientRect();
+
+  htmlElement.style.left = rect.x - headerWidth + headerWidth / 5 + "px";
+  htmlElement.style.top = rect.y + "px";
+
+  htmlElement.style.width = rect.width + "px";
+  htmlElement.style.height = rect.height + "px";
 }

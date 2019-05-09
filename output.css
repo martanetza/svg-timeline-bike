@@ -1,0 +1,6 @@
+.ball {
+  width: 10px;
+  height: 10px;
+  background: #4d4e4e;
+  position: absolute;
+}
