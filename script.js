@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", loadSVG);
+window.addEventListener("DOMContentLoaded", loadSVG2);
 
 function loadSVG() {
   fetch("bike-timeline2a.svg")
@@ -14,12 +15,23 @@ function loadSVG() {
       drawPath();
       calulateSizes();
       calulateSizesPlace();
+      calulateSizesDesc();
       // console.log(
       //   document
       //     .querySelector(".cls-3")
       //     .getAttribute("transform")
       //     .split(" ", 2)
       // );
+    });
+}
+
+function loadSVG2() {
+  fetch("bike01.svg")
+    .then(res => res.text())
+    .then(svgdata => {
+      document
+        .querySelector("header")
+        .insertAdjacentHTML("afterbegin", svgdata);
     });
 }
 
@@ -115,6 +127,7 @@ function animate_1() {
   let animateArrayGroup = document.querySelectorAll(".animCircleGroup");
   let animatePlaceholder = document.querySelectorAll(".svgplaceholder");
   let animatePlaceholder_1 = document.querySelectorAll(".svgplaceholder_1");
+  let animatePlaceholder_2 = document.querySelectorAll(".svgplaceholder_2");
 
   animatePlaceholder.forEach(myFunct);
   animateArrayGroup.forEach(myFunct);
@@ -127,8 +140,13 @@ function animate_1() {
 
       let element = animatePath[i];
       TweenMax.to(element, 1, { opacity: 1 });
+
       let element_1 = animatePlaceholder_1[i];
       TweenMax.to(element_1, 1, { opacity: 1 });
+
+      console.log(animatePlaceholder_2[i]);
+      let element_2 = animatePlaceholder_2[i];
+      TweenMax.to(element_2, 1, { opacity: 1 });
 
       console.log(animateArrayGroup[i].getBoundingClientRect().top);
 
@@ -193,6 +211,8 @@ function animate_1() {
       TweenMax.to(element, 1, { opacity: 0 });
       let element_1 = animatePlaceholder_1[i];
       TweenMax.to(element_1, 1, { opacity: 0 });
+      let element_2 = animatePlaceholder_2[i];
+      TweenMax.to(element_2, 1, { opacity: 0 });
       console.log(i);
       let elm = animateArray[i];
 
@@ -274,12 +294,15 @@ function showJSONdata(data) {
 
   template = document.querySelector("template");
   templatePlace = document.querySelector(".tmpl-place");
+  templateDesc = document.querySelector(".tmpl-desc");
   data.forEach(element => {
     console.log(element.place);
     let clone = template.cloneNode(true).content;
     let clonePlace = templatePlace.cloneNode(true).content;
+    let cloneDesc = templateDesc.cloneNode(true).content;
     clone.querySelector("h1").textContent = element.time;
     clonePlace.querySelector("h1").textContent = element.country;
+    cloneDesc.querySelector("p").textContent = element.description;
     // clone.querySelector("img").src =
     //   "svg_plus_json/" + element.image + ".jpg";
     // clone.querySelector("[data-field='year']").textContent = element.year;
@@ -294,6 +317,9 @@ function showJSONdata(data) {
     document
       .querySelector("[data-svgplaceholder='place_" + element.id + "']")
       .appendChild(clonePlace);
+    document
+      .querySelector("[data-svgplaceholder='desc_" + element.id + "']")
+      .appendChild(cloneDesc);
   });
 }
 
@@ -316,6 +342,34 @@ function repalceSVGwithHTMLplace(htmlElement) {
 }
 
 function fitRetangulePlace(svgElement, htmlElement) {
+  const rect = svgElement.getBoundingClientRect();
+
+  htmlElement.style.left = rect.x - headerWidth + headerWidth / 5 + "px";
+  htmlElement.style.top = rect.y + "px";
+
+  htmlElement.style.width = rect.width + "px";
+  htmlElement.style.height = rect.height + "px";
+}
+
+// calc sizes - description
+
+function calulateSizesDesc() {
+  const svgPlaceholderDesc = document.querySelectorAll(".svgplaceholder_2");
+  console.log(svgPlaceholderDesc);
+  svgPlaceholderDesc.forEach(repalceSVGwithHTMLdesc);
+}
+
+function repalceSVGwithHTMLdesc(htmlElement) {
+  const svgId = htmlElement.dataset.svgplaceholder;
+  const svgSelector = "#" + svgId;
+
+  const svgElement = document.querySelector(svgSelector);
+  console.log(svgElement);
+
+  fitRetanguleDesc(svgElement, htmlElement);
+}
+
+function fitRetanguleDesc(svgElement, htmlElement) {
   const rect = svgElement.getBoundingClientRect();
 
   htmlElement.style.left = rect.x - headerWidth + headerWidth / 5 + "px";

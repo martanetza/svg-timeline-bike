@@ -541,16 +541,16 @@
         <path d="M77,304.8a.42.42,0,0,1,.42-.44.41.41,0,0,1,.42.44.42.42,0,1,1-.84,0Z" transform="translate(9.21 24.79)"/>
       </g>
       <g>
-        <rect class="cls-5" x="46.36" y="276.98" width="86.32" height="54.43"/>
-        <rect class="cls-5" x="426.66" y="279.13" width="86.32" height="54.43"/>
-        <rect class="cls-5" x="149.53" y="417.18" width="86.32" height="54.43"/>
-        <rect class="cls-5" x="319.63" y="417.18" width="86.32" height="54.43"/>
-        <rect class="cls-5" x="516.21" y="279.13" width="86.32" height="54.43"/>
-        <rect class="cls-5" x="233.25" y="211.91" width="86.32" height="54.43"/>
-        <rect class="cls-5" x="617.03" y="417.33" width="86.32" height="54.43"/>
-        <rect class="cls-5" x="703.75" y="215.06" width="86.32" height="54.43"/>
-        <rect class="cls-5" x="789.14" y="417.33" width="86.32" height="54.43"/>
         <rect class="cls-5" x="893.36" y="281.35" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="789.14" y="417.33" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="703.75" y="215.06" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="617.03" y="417.33" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="516.21" y="279.13" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="426.66" y="279.13" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="319.63" y="417.18" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="233.25" y="211.91" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="149.53" y="417.18" width="86.32" height="54.43"/>
+        <rect class="cls-5" x="46.36" y="276.98" width="86.32" height="54.43"/>
       </g>
     </g>
   </g>

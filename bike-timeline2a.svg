@@ -423,18 +423,29 @@
         <rect id="place_10" class="cls-5" x="905.74" y="262.32" width="66.08" height="11.69"/>
       </g>
 
-        <g>
-        <rect  id="desc_01" class="cls-5" x="46.36" y="276.98" width="86.32" height="54.43"/>
-        <rect  id="desc_02" class="cls-5" x="426.66" y="279.13" width="86.32" height="54.43"/>
-        <rect  id="desc_03" class="cls-5" x="149.53" y="417.18" width="86.32" height="54.43"/>
+        <!-- <g>
+        <rect id="desc_01" class="cls-5" x="46.36" y="276.98" width="86.32" height="54.43"/>
+        <rect id="desc_05" class="cls-5" x="426.66" y="279.13" width="86.32" height="54.43"/>
+        <rect id="desc_02" class="cls-5" x="149.53" y="417.18" width="86.32" height="54.43"/>
         <rect id="desc_04" class="cls-5" x="319.63" y="417.18" width="86.32" height="54.43"/>
-        <rect id="desc_05" class="cls-5" x="516.21" y="279.13" width="86.32" height="54.43"/>
-        <rect id="desc_06" class="cls-5" x="233.25" y="211.91" width="86.32" height="54.43"/>
+        <rect id="desc_06" class="cls-5" x="516.21" y="279.13" width="86.32" height="54.43"/>
+        <rect id="desc_03" class="cls-5" x="233.25" y="211.91" width="86.32" height="54.43"/>
         <rect id="desc_07" class="cls-5" x="617.03" y="417.33" width="86.32" height="54.43"/>
         <rect id="desc_08" class="cls-5" x="703.75" y="215.06" width="86.32" height="54.43"/>
         <rect id="desc_09" class="cls-5" x="789.14" y="417.33" width="86.32" height="54.43"/>
         <rect id="desc_10" class="cls-5" x="893.36" y="281.35" width="86.32" height="54.43"/>
-      </g>
-    
+      </g> -->
+
+      <g>
+   <rect id="desc_10" class="cls-5" x="893.36" y="281.35" width="86.32" height="54.43"/>
+        <rect id="desc_09" class="cls-5" x="789.14" y="417.33" width="86.32" height="54.43"/>
+        <rect id="desc_08" class="cls-5" x="703.75" y="215.06" width="86.32" height="54.43"/>
+        <rect id="desc_07" class="cls-5" x="617.03" y="417.33" width="86.32" height="54.43"/>
+        <rect id="desc_06" class="cls-5" x="516.21" y="279.13" width="86.32" height="54.43"/>
+        <rect id="desc_05" class="cls-5" x="426.66" y="279.13" width="86.32" height="54.43"/>
+        <rect id="desc_04" class="cls-5" x="319.63" y="417.18" width="86.32" height="54.43"/>
+        <rect id="desc_03" class="cls-5" x="233.25" y="211.91" width="86.32" height="54.43"/>
+        <rect id="desc_02" class="cls-5" x="149.53" y="417.18" width="86.32" height="54.43"/>
+        <rect  id="desc_01" class="cls-5" x="46.36" y="276.98" width="86.32" height="54.43"/>
   </g>
 </svg>

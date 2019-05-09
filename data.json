@@ -4,7 +4,7 @@
     "time": "1819",
     "country": "Germany",
     "name": "velocipede",
-    "description": "The first verifiable claim for a practically used bicycle belongs to German Baron Karl von Drais, a civil servant to the Grand Duke of Baden in Germany. Drais invented his Laufmaschine (German for 'running machine') in 1817, that was called Draisine(English) orbdraisienne (French) by the press."
+    "description": "German Baron Karl von Drais, a civil servant his Laufmaschine (German for 'running machine') in 1817, that was called Draisine(English) orbdraisienne (French) by the press."
   },
 
   {
@@ -12,7 +12,7 @@
     "time": "1860s",
     "country": "France",
     "name": "boneshaker",
-    "description": "The first really popular and commercially successful design was French.  Its design was simpler than the Macmillan bicycle; it used rotary cranks and pedals mounted to the front wheel hub. It was difficult to pedal the wheel that was used for steering. . In England, the velocipede earned the name of 'bone-shaker' because of its rigid frame and iron-banded wheels that resulted in a 'bone-shaking experience for riders.'"
+    "description": "The first really popular and commercially successful design was French. It used rotary cranks and pedals mounted to the front wheel hub. It was difficult to pedal the wheel that was used for steering.  "
   },
 
   {
@@ -20,7 +20,7 @@
     "time": "1870s",
     "country": "France",
     "name": "penny-farthing",
-    "description": "Known as a high wheel, high wheeler and ordinary, was the first machine to be called a 'bicycle'.It was popular in the 1870s and 1880s, with its large front wheel providing high speeds (owing to it traveling a large distance for every rotation of the legs) and comfort (the large wheel provides greater shock absorption)."
+    "description": "Known as a high wheel, high wheeler and ordinary, was the first machine to be called a 'bicycle'.It was popular in the 1870s and 1880s, with its large front wheel providing high speeds  and comfort."
   },
 
   {
@@ -28,7 +28,7 @@
     "time": "1980s",
     "country": "England",
     "name": "safety bicycle",
-    "description": "The first bicycle to be called a 'safety' was designed by the English engineer Harry John Lawson (Henry Lawson) in 1876, although other bicycles which fit the description had been developed earlier, such as by Thomas Humber in 1868. Unlike with penny-farthings, the rider's feet were within reach of the ground, making it easier to stop. The pedals powered the rear wheel, keeping the rider's feet safely away from the front wheel."
+    "description": "The first bicycle to be called a 'safety' was designed by the English engineer Harry John Lawson. Unlike with penny-farthings, the rider's feet were within reach of the ground, making it easier to stop."
   },
 
   {
@@ -36,7 +36,7 @@
     "time": "1989",
     "country": "England",
     "name": "tandem bike",
-    "description": "Patents related to tandem bicycles date from the late 1890s. In approximately 1898, Mikael Pedersen developed a two-rider tandem version of his Pedersen bicycle that weighed 24 pounds, and a four-rider, or 'quad', that weighed 64 pounds. They were also used in the Second Anglo-Boer War. Tandem popularity began to decline after World War II until a revival started in the late 1960s."
+    "description": "Patents related to tandem bicycles date from the late 1890s. Around 1898, Mikael Pedersen developed a two-rider tandem version of his Pedersen bicycle."
   },
 
   {
@@ -44,7 +44,7 @@
     "time": "1890s",
     "country": "USA",
     "name": "electric bicycle",
-    "description": "In the 1890s, electric bicycles were documented within various U.S. patents. For example, on 31 December 1895, Ogden Bolton Jr. was granted U.S. Patent 552,271for a battery-powered bicycle with '6-pole brush-and-commutator direct current (DC) hub motor mounted in the rear wheel'. There were no gears and the motor could draw up to 100 amperes (A) from a 10-volt battery"
+    "description": "In the 1890s, electric bicycles were documented within various U.S. patents. For example, on 31 December 1895, Ogden Bolton Jr. was granted U.S. Patent 552,271for a battery-powered bicycle."
   },
 
   {
@@ -52,7 +52,7 @@
     "time": "1920s",
     "country": "USA",
     "name": "children bike",
-    "description": "Over the 1920s, bicycles gradually became considered children's toys, and by 1940 most bicycles in the United States were made for children."
+    "description": "Over the 1920s, bicycles gradually became considered children's toys, and by 1940 most bicycles in the United States were made for children. "
   },
 
   {
@@ -60,7 +60,7 @@
     "time": "1970",
     "country": "USA",
     "name": "BMX",
-    "description": "BMX began during the early 1970s in the United States when children began racing their bicycles on dirt tracks in southern California, inspired by the motocross stars of the time. The size and availability of the Schwinn Sting-Ray and other wheelie bikes made them the natural bike of choice for these races, since they were easily customized for better handling and performance. BMX racing was a phenomenon by the mid-1970s."
+    "description": "BMX began during the early 1970s in the United States when children began racing their bicycles on dirt tracks in southern California, inspired by the motocross stars of the time. BMX racing was a phenomenon by the mid-1970s."
   },
 
   {
@@ -68,7 +68,7 @@
     "time": "1970",
     "country": "USA",
     "name": "mountain bike",
-    "description": "The original mountain bikes were modified heavy cruiser bicycles used for freewheeling down mountain trails. The sport became popular in the 1970s in Northern California, USA, with riders using older, single-speed balloon tire bicycles to ride down rugged hillsides."
+    "description": "Mountain bikes were modified heavy cruiser bicycles used for freewheeling down mountain trails. The sport became popular in the 1970s in USA, with riders using older, single-speed balloon tire bicycles to ride down rugged hillsides."
   },
 
   {
@@ -76,6 +76,6 @@
     "time": "Today",
     "country": "worldwide",
     "name": "modern bikes",
-    "description": "The 21st century has seen a continued application of technology to bicycles: in designing them, building them, and using them. Bicycle frames and components continue to get lighter and more aerodynamic without sacrificing strength largely through the use of computer aided design, finite element analysis, and computational fluid dynamics."
+    "description": "Bicycle frames and components continue to get lighter and more aerodynamic without sacrificing strength largely through the use of computer aided design, finite element analysis, and computational fluid dynamics."
   }
 ]
