@@ -6,7 +6,7 @@ body {
   background: #c3c782;
 }
 header {
-  width: 35vw;
+  width: 25vw;
   height: 100vh;
   background: #eef1c0;
   left: -35vw;
@@ -19,15 +19,14 @@ header {
 
 .svgplaceholder {
   position: absolute;
-  background: blue;
 }
 
 main {
   z-index: 1;
   position: relative;
   height: 100vh;
-  margin-left: 30vw;
-  width: 70%;
+  margin-left: 20vw;
+  width: 80%;
   overflow-x: auto;
   overflow-y: hidden;
   background: #c3c782;
@@ -138,6 +137,8 @@ main {
   to {
     stroke-dashoffset: 0;
     stroke: #4d4e4e;
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    /* filter: url(#shadow); */
   }
 }
 
@@ -150,5 +151,11 @@ main {
 
 .cls-5a {
   fill: none;
-  stroke: white;
+  stroke: none;
+}
+
+h1 {
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
 }
