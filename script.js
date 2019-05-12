@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", loadSVG);
 window.addEventListener("DOMContentLoaded", loadSVG2);
+window.addEventListener("resize", calulateSizes);
+window.addEventListener("resize", calulateSizesPlace);
 
 function loadSVG() {
   fetch("bike-timeline2a.svg")
@@ -66,7 +68,7 @@ function animate_1() {
     },
     {
       // opacity: 0,
-      delay: 7,
+      delay: 4,
       opacity: 1,
       rotation: -360,
       scale: 1
@@ -81,7 +83,7 @@ function animate_1() {
     },
     {
       // opacity: 0,
-      delay: 8,
+      delay: 4,
       opacity: 1,
       // rotation: 360,
       scale: 1
@@ -105,17 +107,17 @@ function animate_1() {
   });
 
   TweenLite.from(".cls-3", 2, {
-    delay: 8,
+    delay: 4,
     y: "-=519",
     ease: Elastic.easeOut.config(0.5, 0.3)
   });
   TweenLite.from(".cls-4", 2, {
-    delay: 8,
+    delay: 4,
     y: "-=519",
     ease: Elastic.easeOut.config(0.5, 0.3)
   });
   TweenLite.from(".cls-14", 2, {
-    delay: 8,
+    delay: 4,
     y: "-=519",
     ease: Elastic.easeOut.config(0.5, 0.3)
   });
