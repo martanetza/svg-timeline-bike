@@ -129,10 +129,10 @@ function animate_1() {
   let animatePlaceholder_1 = document.querySelectorAll(".svgplaceholder_1");
   let animatePlaceholder_2 = document.querySelectorAll(".svgplaceholder_2");
 
-  animatePlaceholder.forEach(myFunct);
-  animateArrayGroup.forEach(myFunct);
+  animatePlaceholder.forEach(displayData);
+  animateArrayGroup.forEach(displayData);
 
-  function myFunct(elm, i) {
+  function displayData(elm, i) {
     elm.addEventListener("mouseover", () => {
       console.log(i);
       let elm = animateArray[i];
@@ -146,7 +146,7 @@ function animate_1() {
 
       console.log(animatePlaceholder_2[i]);
       let element_2 = animatePlaceholder_2[i];
-      TweenMax.to(element_2, 1, { opacity: 1 });
+      TweenMax.to(element_2, 1, { display: "block", opacity: 0.8 });
 
       console.log(animateArrayGroup[i].getBoundingClientRect().top);
 
@@ -212,7 +212,7 @@ function animate_1() {
       let element_1 = animatePlaceholder_1[i];
       TweenMax.to(element_1, 1, { opacity: 0 });
       let element_2 = animatePlaceholder_2[i];
-      TweenMax.to(element_2, 1, { opacity: 0 });
+      TweenMax.to(element_2, 1, { opacity: 0, display: "none" });
       console.log(i);
       let elm = animateArray[i];
 
@@ -375,6 +375,6 @@ function fitRetanguleDesc(svgElement, htmlElement) {
   htmlElement.style.left = rect.x - headerWidth + headerWidth / 5 + "px";
   htmlElement.style.top = rect.y + "px";
 
-  htmlElement.style.width = rect.width + "px";
+  htmlElement.style.width = rect.width + 140 + "px";
   htmlElement.style.height = rect.height + "px";
 }

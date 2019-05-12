@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="120%" viewBox="0 60 1032.96 501">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="116%" viewBox="0 60 1032.96 501">
   <defs>
           <!-- <pattern id="pattern" patternUnits="userSpaceOnUse" width="100%" height="650">
             <image class='twombly' xlink:href="bike-timeline2.jpg" x="-30" y="-30"
@@ -437,15 +437,15 @@
       </g> -->
 
       <g>
-   <rect id="desc_10" class="cls-5" x="893.36" y="281.35" width="86.32" height="54.43"/>
-        <rect id="desc_09" class="cls-5" x="789.14" y="417.33" width="86.32" height="54.43"/>
-        <rect id="desc_08" class="cls-5" x="703.75" y="215.06" width="86.32" height="54.43"/>
-        <rect id="desc_07" class="cls-5" x="617.03" y="417.33" width="86.32" height="54.43"/>
-        <rect id="desc_06" class="cls-5" x="516.21" y="279.13" width="86.32" height="54.43"/>
-        <rect id="desc_05" class="cls-5" x="426.66" y="279.13" width="86.32" height="54.43"/>
-        <rect id="desc_04" class="cls-5" x="319.63" y="417.18" width="86.32" height="54.43"/>
-        <rect id="desc_03" class="cls-5" x="233.25" y="211.91" width="86.32" height="54.43"/>
-        <rect id="desc_02" class="cls-5" x="149.53" y="417.18" width="86.32" height="54.43"/>
+        <rect id="desc_10" class="cls-5" x="853.36" y="281.35" width="86.32" height="54.43"/>
+        <rect id="desc_09" class="cls-5" x="749.14" y="417.33" width="86.32" height="54.43"/>
+        <rect id="desc_08" class="cls-5" x="663.75" y="215.06" width="86.32" height="54.43"/>
+        <rect id="desc_07" class="cls-5" x="577.03" y="417.33" width="86.32" height="54.43"/>
+        <rect id="desc_06" class="cls-5" x="476.21" y="279.13" width="86.32" height="54.43"/>
+        <rect id="desc_05" class="cls-5" x="386.66" y="279.13" width="86.32" height="54.43"/>
+        <rect id="desc_04" class="cls-5" x="279.63" y="417.18" width="86.32" height="54.43"/>
+        <rect id="desc_03" class="cls-5" x="193.25" y="211.91" width="86.32" height="54.43"/>
+        <rect id="desc_02" class="cls-5" x="109.53" y="417.18" width="86.32" height="54.43"/>
         <rect  id="desc_01" class="cls-5" x="46.36" y="276.98" width="86.32" height="54.43"/>
   </g>
 </svg>

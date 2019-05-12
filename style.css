@@ -172,21 +172,26 @@ h1 {
 }
 .svgplaceholder_1 h1 {
   font-size: 1.1em;
-  text-align: center;
   color: white;
   margin: 0;
 }
 
 .svgplaceholder_1 {
   opacity: 0;
+  z-index: 3;
 }
 .svgplaceholder_2 {
   opacity: 0;
+  z-index: 2;
+  display: none;
 }
 
 main p {
-  font-size: 0.6em;
+  font-size: 0.9em;
+  background: white;
+  padding: 10px;
   color: #4d4e4e;
+  border-radius: 10px;
 }
 header p {
   color: #4d4e4e;
